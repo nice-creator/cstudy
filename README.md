@@ -1,1 +1,1 @@
-# 学习C过程中的笔记和一些代码
+# Learning C language
