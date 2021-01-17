@@ -15,3 +15,5 @@ for(i=0;i<6;i++)
 printf("\n");
 // 直接整体遍历调用数组
 printf("%s\n",str);
+
+测试
