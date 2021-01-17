@@ -1,0 +1,26 @@
+字符数组的初始化
+1 逐个字符的初始化，不推荐
+char str[6]={'h','e','l','l','o'};  //str[0]=='h'的ASCII值
+2 以字符串形式的初始化，推荐这种方式
+char str[6]=="hello";
+
+字符数组的遍历
+char str[100]="hello";
+int i=0;
+// 逐个字符遍历
+for(i=0;i<6;i++)
+{
+    printf("%c",str[i]);
+}
+printf("\n");
+// 直接整体遍历调用数组
+printf("%s\n",str);
+
+
+
+
+
+
+
+
+

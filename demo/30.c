@@ -10,14 +10,16 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
-    for(i=0;i<3;i++)
+    
+    for(j=0;j<4;j++)
     {
         int sum=0;
-        for(j=0;j<4;j++)
+        for(i=0;i<3;i++)
         {
             sum+=arr[i][j];
-        }    
-        printf("第%d行的平均值是%d\n",i+1,sum/4);
+        }
+        printf("第%d列的平均值是%d\n",j+1,sum/3);
     }
+
     return 0;
 }
