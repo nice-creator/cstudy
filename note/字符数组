@@ -2,7 +2,15 @@
 1 逐个字符的初始化，不推荐
 char str[6]={'h','e','l','l','o'};  //str[0]=='h'的ASCII值
 2 以字符串形式的初始化，推荐这种方式
-char str[6]=="hello";
+char str[6]="hello";
+
+char str1[]={'h','e','l','l','o'}; 
+char str2[]="hello";
+printf("%d\n",sizeof(str1));  //5
+printf("%d\n",sizeof(str2));  //6
+// 定义字符数组的时候，如果没有定义大小
+// 采用逐个字符定义不会再末尾补\0，空位符
+
 
 字符数组的遍历
 char str[100]="hello";
@@ -16,4 +24,3 @@ printf("\n");
 // 直接整体遍历调用数组
 printf("%s\n",str);
 
-测试
