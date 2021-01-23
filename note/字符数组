@@ -24,3 +24,34 @@ printf("\n");
 // 直接整体遍历调用数组
 printf("%s\n",str);
 
+获取键盘输入的三种方式
+int main()
+{
+    char buf[10];
+    printf("please shu ru \n");
+    //scanf("%s",buf); // 不能获取带空格的字符
+    //gets(buf); //获取键盘输入的时候，可以获取带空格的字符串
+               //不会管buf的大小,容易造成内存污染
+    fgets(buf,sizeof(buf),stdin); //推荐使用fgets
+    printf("%s",buf);  
+    return 0;
+}
+
+二维字符数组
+一维数组是存放多个字符的(字符串)
+二维数组是存放多个字符串的，每个字符串占一行
+
+定义:
+char b[][6] = {"hello","world"};   
+// 二维数组在初始化的时候可以省略行标，具体行数由初始化决定
+
+遍历: 
+char str[5][10] = {"hello","world","lidawei","hahaah","let'sgo"};   
+    int i=0;
+    for(i=0;i<5;i++)
+    {
+        printf("%s\n",str[i]);
+    }
+
+应用场景：
+当键盘输入多个独立的字符串，用户必须存储好    
